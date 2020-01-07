@@ -65,7 +65,7 @@ uint16_t myRemapFn(uint16_t x, uint16_t y) {
         case 0: return 17;
         case 4: return 3;
         case 6: return 38;
-        case 10: return 26;
+        case 10: return 24;
         case 14: return 59;
         case 18: return 45;
         case 20: return 80;
@@ -175,13 +175,13 @@ void scrolling_line(){
     matrix->clear();
     matrix->drawLine(i,0,i,mh,LED_RED_HIGH);
     matrix->show();
-    delay(500);
+    delay(100);
   }
   for (uint8_t i = 0;i<mh;i++){
     matrix->clear();
     matrix->drawLine(0,i,mw,i,LED_GREEN_HIGH);
     matrix->show();
-    delay(500);
+    delay(100);
   }
 }
 
